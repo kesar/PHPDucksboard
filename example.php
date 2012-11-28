@@ -19,5 +19,17 @@ $data = array(
     )
 );
 duckboard::send('timeline', $data);
+
+$data = array(
+    'timestamp' => time()-(4*24*60*60),
+    'value' => 7
+);
+duckboard::send('num_cases_pending', $data);
+$data = array(
+    'timestamp' => time()-(4*24*60*60),
+    'value' => 1
+);
+duckboard::send('num_cases_closed', $data);
+duckboard::send('num_physician', 28);
 */
 
